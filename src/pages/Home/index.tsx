@@ -71,16 +71,18 @@ const Home: React.FC = () => {
       <div className='form'>
         <div className='fields'>
           <div className='form-field'>
-            <label>Free Premium Rooms:</label>
+            <label htmlFor='premium-rooms'>Free Premium Rooms:</label>
             <input
+              id='premium-rooms'
               value={rooms.premium}
               onChange={(e) => handleChangeRooms('premium', e)}
               type='text'
             />
           </div>
           <div className='form-field'>
-            <label>Free Economy Rooms:</label>
+            <label htmlFor='economy-rooms'>Free Economy Rooms:</label>
             <input
+              id='economy-rooms'
               value={rooms.economy}
               onChange={(e) => handleChangeRooms('economy', e)}
               type='text'
